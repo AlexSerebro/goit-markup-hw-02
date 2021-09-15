@@ -101,6 +101,7 @@ body {
   background-color: #2f303a;
 }
 .hero-title {
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 44px;
   font-style: normal;
@@ -120,7 +121,8 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--title-text-color);
 }
 .button {
@@ -128,12 +130,13 @@ body {
   color: var(--title-text-color);
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
   text-align: center;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
