@@ -3,6 +3,11 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
+  --white-text-color: #ffffff;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --second-bg-color: #2f303a;
+  --first-logo-color: #000000;
+  --sect-team-bg-color: #f5f4fa;
 }
 /* global selector */
 body {
@@ -81,9 +86,10 @@ body {
   text-align: left;
 }
 .logo-header {
-  color: #000000;
+  color: var(--first-logo-color);
 }
-.logo-header:hover {
+.logo-header:hover,
+.logo-header:focus {
   color: var(--accent-color);
 }
 
@@ -98,11 +104,11 @@ body {
 }
 /* HERO section */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--second-bg-color);
 }
 .hero-title {
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-text-color);
   font-size: 44px;
   font-style: normal;
   font-weight: 900;
@@ -113,7 +119,7 @@ body {
 .hero-button {
   cursor: pointer;
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-text-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -149,7 +155,7 @@ body {
 }
 /* section team */
 .section-team {
-  background: #f5f4fa;
+  background-color: var(--sect-team-bg-color);
 }
 .name {
   font-size: 16px;
@@ -167,25 +173,21 @@ body {
 }
 /* footer */
 .footer {
-  background: #2f303a;
+  background-color: var(--second-bg-color);
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 .footer-item {
-  color: #ffffff;
-
+  color: var(--white-text-color);
   font-style: normal;
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
 }
 .footer-contact {
-  color: rgba(255, 255, 255, 0.6);
-
+  color: var(--footer-contact-color);
   font-style: normal;
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
