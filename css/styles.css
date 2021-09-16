@@ -10,14 +10,21 @@
   --sect-team-bg-color: #f5f4fa;
 }
 /* global selector */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', 'Rubik', sans-serif;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: left;
 }
 
 .title {
@@ -119,7 +126,10 @@ body {
 .hero-button {
   cursor: pointer;
   background-color: var(--accent-color);
+  border: 0;
+
   color: var(--white-text-color);
+
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -133,9 +143,11 @@ body {
 }
 .button {
   cursor: pointer;
+  border: 0;
+
   color: var(--title-text-color);
+  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
@@ -146,12 +158,24 @@ body {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
+.active-button {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
 /* features section */
 .features {
   display: none;
 }
 .features-title {
   text-transform: uppercase;
+}
+
+.features-text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 /* section team */
 .section-team {
